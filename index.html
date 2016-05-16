@@ -1,0 +1,43 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+            
+        <script data-main="js/appIndex/index_main" src="lib/require/require.js"></script>
+        <!--
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular/angular-ui-router.js"></script>
+        <script src="js/appIndex/app.js"></script>
+        -->
+    </head>
+    <body>
+        <rabbit-header></rabbit-header>
+        
+        <div>
+            <ul>
+                <li><a href="#/start">start0</a></li>
+                <li><a href="#/home">home</a></li>
+                <li><a href="#/inbox/100">inbox</a></li>
+                <li><a href="/inbox02.html">inbox02</a></li>
+                <li><a href="#/admin">admin</a></li>
+                <li><a ui-sref="admin.index">admin.index</a></li>
+                <li><a ui-sref="admin.users">admin.users</a></li>
+                <li><a href="#/contacts">contacts</a></li>
+            </ul>
+        </div>
+        
+        <div ui-view></div>
+        
+        <rabbit-footer></rabbit-footer>
+        
+    </body>
+</html>

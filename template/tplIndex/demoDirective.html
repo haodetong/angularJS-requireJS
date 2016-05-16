@@ -1,0 +1,8 @@
+<div>this is a demo of directive.</div>
+<div class="note-area" ng-show="!editMode">
+    <ul>
+      <li ng-repeat="note in notes|orderBy:'id'">
+        <a href="#">{{note.title}}</a>
+      </li>
+    </ul>
+</div>
